@@ -39,7 +39,7 @@ jobs:
 
       # Run Gradle build, tests and coverage explicitly
       - name: Build with Gradle
-        uses: gradle/gradle-build-action@v4
+        uses: gradle/gradle-build-action@v3
         with:
           arguments: clean test jacocoTestReport jacocoTestCoverageVerification
           cache-disabled: true
