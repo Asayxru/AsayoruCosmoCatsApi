@@ -10,7 +10,7 @@ import java.lang.annotation.*;
 @Retention(RetentionPolicy.RUNTIME)
 public @interface CosmicWordCheck {
 
-    String message() default "Name must contain something cosmiiiic";
+    String message() default "Name must contain something cosmiic";
     Class<?>[] groups() default {};
     Class<? extends Payload>[] payload() default {};
 }
