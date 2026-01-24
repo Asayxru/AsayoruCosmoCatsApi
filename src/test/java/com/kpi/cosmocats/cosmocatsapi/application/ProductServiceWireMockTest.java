@@ -33,7 +33,8 @@ class ProductServiceWireMockTest {
 
         ProductRepository repository = mock(ProductRepository.class);
         ProductMapper mapper = mock(ProductMapper.class);
-        CategoryClient categoryClient = new CategoryClient();
+        CategoryClient categoryClient = new CategoryClient(new org.springframework.web.client.RestTemplate(), "http://localhost:8089");
+
 
         Product product = new Product();
         when(mapper.toDomain(any())).thenReturn(product);
